@@ -15,5 +15,5 @@ Study, Work, Get Paid, Get your ideal home or Graduate from University!
 * 🎮 Minigames
 
 ### Files
-- [Glossary](./Docs/Glossary.md)
-- [Game Design Document](./Docs/GDD.md)
+- [Glossary](./Glossary.md)
+- [Game Design Document](https://docs.google.com/document/d/1X9tZOIXdLeq10bEysVCpohqtgLjguxbrvK5s6Pqad5w/edit?tab=t.0#heading=h.sm5dtz7hlt07)
