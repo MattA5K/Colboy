@@ -13,3 +13,7 @@ Study, Work, Get Paid, Get your ideal home or Graduate from University!
 * 📅 Calendar System
 * 🗺️ Accesable Map System to travel different locations
 * 🎮 Minigames
+
+### Files
+- [Glossary](./Docs/Glossary.md)
+- [Game Design Document](./Docs/GDD.md)
