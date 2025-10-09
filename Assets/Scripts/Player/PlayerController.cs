@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 1f;
+    [SerializeField] private float moveSpeed;
 
     private Rigidbody2D rb2d;
     private Vector2 moveInput;
@@ -17,13 +18,13 @@ public class PlayerController : MonoBehaviour
     
     private void Update()
     {
-        moveInput.x = Input.GetAxisRaw("Horizontal");
-        moveInput.y = Input.GetAxisRaw("Vertical");
-        moveInput.Normalize();
+        rb2d.linearVelocity = moveInput * moveSpeed;
     }
 
-    private void FixedUpdate()
+    public void Move(InputAction.CallbackContext context)
     {
-        rb2d.MovePosition(rb2d.position + moveInput * moveSpeed * Time.fixedDeltaTime);
+        moveInput = context.ReadValue<Vector2>();
     }
+
+    
 }
