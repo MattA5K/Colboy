@@ -3,6 +3,7 @@ using UnityEngine;
 public class Door : MonoBehaviour , IInteractable
 {
     public bool IsInteractable; //temp
+    [SerializeField] private GameObject MapManager;
     public void Interact()
     {
         MapUI.Instance.OpenMap();
